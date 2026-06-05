@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the portfolio of Tautik Venkata Siva Sai Penumudi - a passionate developer studying at PVPSIT, specializing in MERN Stack, Java, Python, C, Video Editing, and Story Writing.">
+    <title>Tautik Penumudi | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Ambient Glows -->
+    <div class="glow-bg">
+        <div class="glow-sphere glow-1" id="glow-1"></div>
+        <div class="glow-sphere glow-2" id="glow-2"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="main-header">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="logo-link">
+                <span class="logo-accent">&lt;</span>Tautik<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="navigation-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active" id="nav-hero-link">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-about-link">About</a></li>
+                    <li><a href="#interests" class="nav-link" id="nav-interests-link">Interests</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-skills-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge hero-badge">Welcome to my space</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Tautik Penumudi</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        A developer and creative creator specializing in building full-stack applications and creating compelling digital narratives through code, video, and words.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#about" class="btn btn-primary" id="hero-btn-about">About Me</a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-card">
+                        <img src="developer_avatar.png" alt="Tautik Venkata Siva Sai Penumudi Avatar" class="profile-img" id="profile-picture">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" id="scroll-prompt">
+                <span>Scroll Down</span>
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Identity</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info-card glass-panel">
+                        <h3>Personal Profile</h3>
+                        <p class="about-bio">
+                            I am a builder of digital experiences, bridging logical engineering with artistic expression. Currently expanding my horizons in both the technical and creative landscapes.
+                        </p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-label">Full Name</span>
+                                <span class="info-value">Tautik Venkata Siva Sai Penumudi</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Born</span>
+                                <span class="info-value">2005</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Age</span>
+                                <span class="info-value" id="current-age">21 years old</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Homeplace</span>
+                                <span class="info-value">Vijayawada, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-education-card glass-panel">
+                        <h3>Education</h3>
+                        <div class="education-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4 class="timeline-title">B.Tech in Computer Science / Engineering</h4>
+                                <p class="timeline-subtitle">Prasad V Potluri Siddhartha Institute of Technology</p>
+                                <p class="timeline-desc">Acquiring core knowledge of computer science, algorithms, software engineering principles, and hands-on application development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests" class="interests-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Creative Passions</span>
+                    <h2 class="section-title">Interests & Proof</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="interests-grid">
+                    <!-- Interest 1: Video Editing -->
+                    <article class="interest-card glass-panel" id="card-video-editing">
+                        <div class="interest-icon-wrapper video-icon-bg">
+                            <!-- Film Camera SVG Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="interest-svg">
+                                <path d="M23 7l-7 5 7 5V7z" />
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                            </svg>
+                        </div>
+                        <h3 class="interest-name">Video Editing</h3>
+                        <p class="interest-desc">
+                            Crafting visually stunning narratives, color grading, pacing, and editing engaging content that holds attention and tells a memorable visual story.
+                        </p>
+                        <div class="proof-links">
+                            <h4 class="proof-heading">Verify / Connect:</h4>
+                            <a href="https://instagram.com/siva.cc_" target="_blank" rel="noopener noreferrer" class="proof-btn instagram-btn" id="link-instagram-proof">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="social-svg-inline">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg>
+                                @siva.cc_
+                            </a>
+                        </div>
+                    </</article>
+
+                    <!-- Interest 2: Story Writing -->
+                    <article class="interest-card glass-panel" id="card-story-writing">
+                        <div class="interest-icon-wrapper writing-icon-bg">
+                            <!-- Book Open / Feather SVG Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="interest-svg">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                        </div>
+                        <h3 class="interest-name">Story Writing</h3>
+                        <p class="interest-desc">
+                            Developing worlds, writing screenplays, character-driven narratives, and short fiction with an emphasis on relatable themes and emotional depth.
+                        </p>
+                        <div class="proof-links">
+                            <h4 class="proof-heading">Verify / Connect:</h4>
+                            <a href="https://twitter.com/TautikPenumudi" target="_blank" rel="noopener noreferrer" class="proof-btn twitter-btn" id="link-twitter-proof">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="social-svg-inline">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                </svg>
+                                @TautikPenumudi
+                            </a>
+                        </div>
+                    </</article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Technical Arsenal</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <!-- Languages Group -->
+                    <div class="skills-category-card glass-panel" id="category-languages">
+                        <h3>Programming Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill-item" id="skill-java">
+                                <div class="skill-icon java-icon">☕</div>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <div class="skill-item" id="skill-python">
+                                <div class="skill-icon python-icon">🐍</div>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <div class="skill-item" id="skill-c">
+                                <div class="skill-icon c-icon">⚙️</div>
+                                <span class="skill-name">C</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks Group -->
+                    <div class="skills-category-card glass-panel" id="category-frameworks">
+                        <h3>Preferred Architecture</h3>
+                        <div class="mern-showcase">
+                            <div class="mern-title-container">
+                                <span class="mern-badge">Framework</span>
+                                <h4 class="mern-title">MERN Stack</h4>
+                            </div>
+                            <p class="mern-desc">Building full-stack, scalable, fast web applications with modern component-driven patterns and NoSQL databases.</p>
+                            <div class="mern-components">
+                                <div class="mern-chip" title="MongoDB">M</div>
+                                <div class="mern-chip" title="Express.js">E</div>
+                                <div class="mern-chip" title="React.js">R</div>
+                                <div class="mern-chip" title="Node.js">N</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-card glass-panel">
+                    <div class="contact-details">
+                        <h3>Let's collaborate on code or creative content!</h3>
+                        <p>I'm always open to discussing web development, video projects, writing collaborations, or opportunities in software engineering.</p>
+                        
+                        <div class="contact-links-grid">
+                            <a href="https://instagram.com/siva.cc_" target="_blank" rel="noopener noreferrer" class="contact-item instagram-card" id="contact-insta">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="contact-svg-icon">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                    </svg>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="contact-label">Instagram</span>
+                                    <span class="contact-handle">@siva.cc_</span>
+                                </div>
+                            </a>
+
+                            <a href="https://twitter.com/TautikPenumudi" target="_blank" rel="noopener noreferrer" class="contact-item twitter-card" id="contact-twitter">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="contact-svg-icon">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="contact-label">Twitter / X</span>
+                                    <span class="contact-handle">@TautikPenumudi</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Tautik Venkata Siva Sai Penumudi. All rights reserved.</p>
+            <p class="footer-subtext">Designed with premium aesthetics and built using vanilla web standards.</p>
+        </div>
+    </footer>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
